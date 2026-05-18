@@ -36,7 +36,7 @@ const LoginPage = () => {
             <p style={{ color: "var(--text-secondary)", fontSize: 14, marginTop: 6 }}>Sign in to start bidding</p>
           </div>
           <div style={{ background: "rgba(45,212,191,0.07)", border: "1px solid rgba(45,212,191,0.2)", borderRadius: 12, padding: "12px 16px", marginBottom: 24, fontSize: 12, color: "#2DD4BF", lineHeight: 1.7 }}>
-            <strong>Try your first Bid</strong>  / admin
+            <strong>Try your first Bid</strong>  / Every one is a admin
           </div>
           {[
             { key: "username", label: "Username", type: "text", placeholder: "NAME" },
