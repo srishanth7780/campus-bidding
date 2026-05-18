@@ -28,7 +28,7 @@ const BubbleBackground = () => (
       const z = Math.random() * 400 - 200;
       const rx = Math.random() * 40 - 20;
       const ry = Math.random() * 40 - 20;
-      const imgSrc= "https://i1-e.pinimg.com/736x/b4/d7/b8/b4d7b811c45b34cdedb68e7b0cb024d3.jpg"
+      const imgSrc= "https://i.postimg.cc/9QNgZPgG/Whats-App-Image-2026-05-13-at-10-53-53-AM.jpg"
       
       return (
         <div key={`container-${index}`}>
