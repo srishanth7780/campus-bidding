@@ -21,7 +21,7 @@ const LoginPage = () => {
     await new Promise(r => setTimeout(r, 700));
     const ok = login(creds.username, creds.password);
     setLoading(false);
-    if (!ok) setError("Invalid credentials. Try alice/pass123, bob/pass456, or admin/admin");
+    if (!ok) setError("Invalid credentials.......");
   };
 
   return (
@@ -36,11 +36,11 @@ const LoginPage = () => {
             <p style={{ color: "var(--text-secondary)", fontSize: 14, marginTop: 6 }}>Sign in to start bidding</p>
           </div>
           <div style={{ background: "rgba(45,212,191,0.07)", border: "1px solid rgba(45,212,191,0.2)", borderRadius: 12, padding: "12px 16px", marginBottom: 24, fontSize: 12, color: "#2DD4BF", lineHeight: 1.7 }}>
-            <strong>Demo:</strong> alice / pass123 &nbsp;·&nbsp; bob / pass456 &nbsp;·&nbsp; admin / admin
+            <strong>Try your first Bid</strong>  / admin
           </div>
           {[
-            { key: "username", label: "Username", type: "text", placeholder: "alice" },
-            { key: "password", label: "Password", type: "password", placeholder: "••••••••" },
+            { key: "username", label: "Username", type: "text", placeholder: "NAME" },
+            { key: "password", label: "Password", type: "text", placeholder: "••••••••" },
           ].map(f => (
             <div key={f.key} style={{ marginBottom: 16 }}>
               <label style={{ display: "block", fontSize: 13, fontWeight: 500, marginBottom: 7 }}>{f.label}</label>
