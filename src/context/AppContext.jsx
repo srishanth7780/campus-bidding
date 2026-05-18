@@ -132,7 +132,7 @@ export const AppProvider = ({ children }) => {
         currentBid: amount,
         bids: [...(item.bids || []), newBid]
       });
-      addNotification(`Bid of $${amount.toLocaleString()} placed!`, "success");
+      addNotification(`Bid of inr.${amount.toLocaleString()} placed!`, "success");
       return true;
     } catch (e) {
       console.error(e);
