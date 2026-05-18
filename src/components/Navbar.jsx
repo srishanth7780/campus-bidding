@@ -67,9 +67,9 @@ const Navbar = () => {
             background: "linear-gradient(135deg, #A78BFA, #2DD4BF)",
             display: "flex", alignItems: "center", justifyContent: "center",
             fontSize: 16, fontWeight: 800, fontFamily: "Syne",
-          }}>B</div>
+          }}>E</div>
           <span style={{ fontFamily: "Syne", fontWeight: 700, fontSize: 18, color: "var(--text-primary)" }}>
-            BidVault
+            Elite Bid
           </span>
         </motion.div>
       </Link>
