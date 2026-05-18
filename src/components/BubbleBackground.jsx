@@ -28,7 +28,6 @@ const BubbleBackground = () => (
       const z = Math.random() * 400 - 200;
       const rx = Math.random() * 40 - 20;
       const ry = Math.random() * 40 - 20;
-      const imgSrc2 = "https://i.postimg.cc/TYYnBVBg/2.jpg"
       const imgSrc= "https://i.postimg.cc/jjcG2yQ8/IMG-20260511-221344.jpg"
       
       return (
@@ -48,21 +47,7 @@ const BubbleBackground = () => (
             '--ry': `${ry}deg`,
           }}
           />
-          <img
-          key={`img-2-${index}`}
-          src={imgSrc2}
-          className="floating-3d-img rounded-full"
-          alt="3D floating element"
-          style={{
-            '--bubble-size': `clamp(${35 + (index % 4) * 15}px, ${4 + (index % 4) * 2}vw, ${70 + (index % 4) * 30}px)`,
-            '--bubble-left': `${(index * 25 + 40) % 100}%`,
-            '--bubble-duration': `${22 + (index % 3) * 4}s`,
-            '--bubble-delay': `${(index % 4) * 2}s`,
-            '--z': `${z * 0.8 - 50}px`,
-            '--rx': `${rx + 20}deg`,
-            '--ry': `${ry - 20}deg`,
-          }}
-        />
+
           </div>
       );
     })}
