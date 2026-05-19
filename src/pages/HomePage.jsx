@@ -76,7 +76,7 @@ const HomePage = () => {
                   <p style={{ color: "var(--text-secondary)", fontSize: 14, maxWidth: 420, lineHeight: 1.7 }}>{featuredItem?.description}</p>
                 </div>
                 <div style={{ display: "flex", gap: 10, flexWrap: "wrap", alignItems: "center" }}>
-                  <span style={{ padding: "8px 14px", borderRadius: 16, background: "rgba(255,255,255,0.06)", color: "#F5C542", fontWeight: 700 }}>${featuredItem?.currentBid.toLocaleString()}</span>
+                  <span style={{ padding: "8px 14px", borderRadius: 16, background: "rgba(255,255,255,0.06)", color: "#F5C542", fontWeight: 700 }}>inr.{featuredItem?.currentBid.toLocaleString()}</span>
                   <span style={{ padding: "8px 14px", borderRadius: 16, background: "rgba(45,212,191,0.08)", color: "#2DD4BF", fontWeight: 700 }}>{featuredItem?.bids.length} bids</span>
                   <span style={{ padding: "8px 14px", borderRadius: 16, background: "rgba(167,139,250,0.08)", color: "#C4B5FD", fontWeight: 700 }}>{featuredItem?.category}</span>
                 </div>
