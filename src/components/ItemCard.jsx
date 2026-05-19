@@ -114,7 +114,7 @@ const ItemCard = ({ item, index, onClick }) => {
                 fontSize: 20, fontWeight: 700, fontFamily: "Syne",
                 color: isSold ? "#FB7185" : "#F5C542",
               }}>
-                ${item.currentBid.toLocaleString()}
+                inr.{item.currentBid.toLocaleString()}
               </div>
             </div>
 
