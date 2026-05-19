@@ -179,9 +179,9 @@ const HomePage = () => {
                 <div style={{ fontSize: 14, color: "var(--text-secondary)", marginBottom: 24 }}>Listed by <span style={{ color: "#A78BFA", fontWeight: 600 }}>@{selectedItem.seller}</span></div>
                 <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(140px, 1fr))", gap: 16, marginBottom: 24 }}>
                   {[
-                    { label: "Current Bid", value: `$${selectedItem.currentBid.toLocaleString()}`, color: "#F5C542" },
-                    { label: "Starting Price", value: `$${selectedItem.startPrice.toLocaleString()}`, color: "var(--text-primary)" },
-                    { label: "Reserve Price", value: `$${selectedItem.reservePrice.toLocaleString()}`, color: "#2DD4BF" },
+                    { label: "Current Bid", value: `inr.${selectedItem.currentBid.toLocaleString()}`, color: "#F5C542" },
+                    { label: "Starting Price", value: `inr.${selectedItem.startPrice.toLocaleString()}`, color: "var(--text-primary)" },
+                    { label: "Reserve Price", value: `inr.${selectedItem.reservePrice.toLocaleString()}`, color: "#2DD4BF" },
                     { label: "Total Bids", value: selectedItem.bids.length, color: "#A78BFA" },
                   ].map(stat => (
                     <div key={stat.label} className="glass" style={{ borderRadius: 16, padding: "16px 20px" }}>
