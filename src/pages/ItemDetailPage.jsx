@@ -82,7 +82,7 @@ const ItemDetailPage = () => {
                       </div>
                       <span style={{ fontSize: 13 }}>{bid.bidder}</span>
                     </div>
-                    <span style={{ fontSize: 14, fontWeight: 700, color: "#F5C542" }}>${bid.amount.toLocaleString()}</span>
+                    <span style={{ fontSize: 14, fontWeight: 700, color: "#F5C542" }}>inr.{bid.amount.toLocaleString()}</span>
                   </motion.div>
                 ))
               }
